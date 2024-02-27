@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.clearfix{
+    clear: both;
+}
+
+.fotoPersona{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    margin: 15px 45px;
+}
+
+body{
+    background-color: rgb(250, 238, 209)    ;
+}
+
+header div{
+    float: left;
+    margin: 0px 12px;
+    border-radius: 10px;
+}
+
+#title{
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+
+header{
+    background-color: rgb(96, 114, 116);
+    height: 75px;
+    line-height: 75px;
+    width: 100%;
+    box-shadow: 0px 2px 10px black;    
+    
+}
+
+#content1{
+    background-color: rgb(178, 165, 155);
+    padding: 10px;
+    margin: 45px 45px 0px 45px;
+    text-align: center;
+    height: 375px;
+    box-shadow: 0px 0px 7px black;
+}
+
+#teamDesc ol li{
+    float: left;
+    list-style: none;
+}
+
+#teamDesc{
+    margin: 15px 15px;
+}
+
+#content2{
+    background-color: rgb(222, 208, 182);
+    padding: 10px;
+    margin: 45px 45px 0px 45px;
+    text-align: center;
+    height: 1850px;
+    box-shadow: 0px 0px 7px black;
+}
+
+#fotoDF{
+    height: 369.9px;
+    width: 1098px;
+    box-shadow: 0px 0px 7px black;
+}
+
+#dataset{
+    margin-bottom: 70px;
+}
+
+.content2parr{
+    margin: 15px 0px;
+}
+
+#title_desc{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#descripcion{
+    text-align: left;
+}
+
+.parrafoDesc{
+    width: 100%;
+    height: auto;
+    margin: 20px 10px;
+}
