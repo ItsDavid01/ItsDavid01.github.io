@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accidentes en Barranquilla - Universidad del Norte</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    #content1,
+    #content2 {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #333;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 20px;
+      list-style: none;
+    }
+
+    .fotoPersona {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    #descripcion h3 {
+      margin: 0 0 10px;
+    }
+
+    #descripcion p {
+      margin: 5px 0;
+    }
+
+    #fotosDesc {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .foto_desc {
+      max-width: 200px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h2>Accidentes en Barranquilla</h2>
+    </div>
+    <div>
+      <h3>Curso de Optimización - Universidad del Norte</h3>
+    </div>
+  </header>
+
+  <div id="content1">
+    <h1>¡Conoce al Equipo!</h1>
+    <div>
+      <ol>
+        <li>
+          <img class="fotoPersona" src="Fotos/david.jpg" alt="David Meza">
+          <p>David Meza</p>
+          <p>Desarrollador Web</p>
+        </li>
+        <li>
+          <img class="fotoPersona" src="Fotos/andres.jpeg" alt="Andres Evertsz">
+          <p>Andres Evertsz</p>
+          <p>Analista de datos</p>
+        </li>
+        <li>
+          <img class="fotoPersona" src="Fotos/unknown.jpg" alt="unknown person">
+          <p>Cristian Berrio</p>
+          <p>Desarrollador e investigador creativo</p>
+        </li>
+        <li>
+          <img class="fotoPersona" src="Fotos/unknown.jpg" alt="unknown person">
+          <p>Sebastian Guzman</p>
+          <p>Tester</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div id="content2">
+    <h1>Nuestro Dataset Seleccionado</h1>
+    <h3>Victimas de casos de accidentalidad en Barranquilla (Recopilado de DatosAbiertos)</h3>
+    <div>
+      <img src="Fotos/Dataset.png" alt="Celdas del dataset seleccionado" style="max-width: 100%; border-radius: 5px;">
+    </div>
+    <div id="descripcion">
+      <h3>Explicación de la selección del Dataset y visualización inicial de los datos en gráficas</h3>
+      <p>The dataset "Accidentalidad en Barranquilla - víctimas" (Accidents in Barranquilla - victims) from datos.gov.co is crucial for addressing public safety concerns, transportation planning, policy formulation, research endeavors, community awareness, and resource allocation. By providing comprehensive information about accident victims in Barranquilla, Colombia, this dataset serves as a vital tool for understanding the frequency, nature, and locations of accidents, thereby enabling targeted interventions to reduce accidents and associated harm.</p>
+      <p>Analysis of the data facilitates insights into transportation patterns, infrastructure deficiencies, and factors contributing to accidents, informing the development and evaluation of effective policies aimed at enhancing road safety. Moreover, making this data publicly available raises community awareness about the importance of road safety and encourages safer behaviors while traveling.</p>
+      <p>It's important to mention that with this project, we could also identify and pinpoint high-risk areas, efficiently allocate resources for their prevention, and plan prevention strategies accordingly. The statistical insights derived from the dataset analysis reveal notable patterns regarding accident victimization in Barranquilla. Fluctuations in the quantity of victims over time suggest potential seasonal variations in accident rates, while the distribution of victims across different severity levels and types of accidents underscores the need for targeted interventions and safety measures. Disparities in victim distribution by gender highlight demographic considerations for safety initiatives, while identifying age groups most affected by accidents offers valuable guidance for tailored educational programs and preventive measures. Overall, these insights provide crucial information for policymakers and community stakeholders to formulate effective strategies aimed at improving road safety and reducing the number of accident victims in Barranquilla.</p>
+    </div>
+    <div id="fotosDesc">
+      <img src="Fotos/VictimasPorSexo.png" alt="Numero de Victimas Por Sexo" class="foto_desc">
+      <img src="Fotos/VictimasPorClase.png" alt="VictimasPorClase" class="foto_desc">
+      <img src="Fotos/VictimasPorGravedad.png" alt="VictimasPorClase" class="foto_desc">
+      <img src="Fotos/VictimasPorMes.png" alt="VictimasPorClase" class="foto_desc">
+    </div>
+  </div>
+</body>
+
+</html>
