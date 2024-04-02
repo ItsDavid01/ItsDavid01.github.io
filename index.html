@@ -1,123 +1,315 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      Information on accident victims in Barranquilla - Universidad del Norte
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>
-    Information on accident victims in Barranquilla - Universidad del Norte
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-</head>
-
-<header>
-  <div id="title">
-    <h2>Accident victims in Barranquilla</h2>
-  </div>
-
-  <div id="title2">
-    <h3>Optimization Course - Universidad del norte</h3>
-  </div>
-</header>
-
-<div class="clearfix"></div>
-
-<body>
-  <div id="content1">
-    <h1>¡Meet the Team!</h1>
-
-    <div id="teamDesc">
-      <ol>
-        <li>
-          <img class="fotoPersona" src="Fotos/david.jpg" alt="David Meza" />
-          <p>David Meza</p>
-          <p>Web Developer</p>
-        </li>
-        <li>
-          <img class="fotoPersona" src="Fotos/andres.jpeg" alt="Andres Evertsz" />
-          <p>Andres Evertsz</p>
-          <p>Data Analist</p>
-        </li>
-        <li>
-          <img src="Fotos/foto.png" alt="Cristian Berrio" class="fotoPersona" />
-          <p>Cristian Berrio</p>
-          <p>Creative investigator and Developer</p>
-        </li>
-        <li>
-          <img src="Fotos/sebastian.jpg" alt="Sebastian Guzman" class="fotoPersona" />
-          <p>Sebastian Guzman</p>
-          <p>Tester</p>
-        </li>
-      </ol>
+  <header>
+    <div id="title">
+      <h2>Accident victims in Barranquilla</h2>
     </div>
-  </div>
+
+    <div id="title2">
+      <h3>Optimization Course - Universidad del norte</h3>
+    </div>
+  </header>
 
   <div class="clearfix"></div>
 
-  <div id="content2">
-    <h1 class="content2parr">Our selected Dataset</h1>
-    <h3 class="content2parr">
-      Information on accident victims in Barranquilla (from DatosAbiertos)
-    </h3>
+  <body>
+    <div id="content1">
+      <h1>¡Meet the Team!</h1>
 
-    <div id="dataset">
-      <img src="Fotos/Dataset.png" alt="Celdas del dataset seleccionado" id="fotoDF" />
-    </div>
-
-    <div id="descripcion">
-      <h2 id="title_desc">
-        Explanation from our Database and brief visualization of the data
-      </h2>
-      <div class="parrafoDesc">
-        <h3>
-          The dataset "Accidentalidad en Barranquilla - víctimas" (Accidents in Barranquilla - victims) from
-          datos.gov.co is crucial for addressing public safety concerns,
-          transportation planning, policy formulation, research endeavors, community awareness, and resource allocation.
-          By providing comprehensive information about accident victims
-          in Barranquilla, Colombia, this dataset serves as a vital tool for understanding the frequency, nature, and
-          locations of accidents, therefore enabling targeted interventions to reduce accidents and associated harm.
-        </h3>
-      </div>
-
-      <div class="parrafoDesc">
-        <h3>
-          Analysis of the data facilitates insights into transportation patterns, infrastructure deficiencies, and
-          factors contributing to accidents,
-          informing the development and evaluation of effective policies aimed at enhancing road safety.
-          Moreover, making this data publicly available raises community awareness about the importance of road safety
-          and encourages safer behaviors while traveling.
-        </h3>
-      </div>
-
-      <div class="parrafoDesc">
-        <h3>
-          It's important to mention that with this project We could also identify and pinpoint high-risk areas,
-          efficiently allocate resources for their prevention,
-          and plan prevention strategies accordingly.
-        </h3>
-      </div>
-      <div class="parrafoDesc">
-        <h3>
-          The statistical insights derived from the dataset analysis reveal notable patterns regarding accident
-          victimization in Barranquilla. Fluctuations in the quantity of victims over time suggest potential seasonal
-          variations in accident rates, while the distribution of victims across different severity levels and types of
-          accidents underscores the need for targeted interventions and safety measures. Disparities in victim
-          distribution by gender highlight demographic considerations for safety initiatives, while identifying age
-          groups most affected by accidents offers valuable guidance for tailored educational programs and preventive
-          measures. Overall, these insights provide crucial information for policymakers and community stakeholders to
-          formulate effective strategies aimed at improving road safety and reducing the number of accident victims in
-          Barranquilla.
-        </h3>
-      </div>
-
-      <div id="fotosDesc">
-        <img src="Fotos/VictimasPorSexo.png" alt="Numero de Victimas Por Sexo" class="foto_desc" />
-        <img src="Fotos/VictimasPorClase.png" alt="VictimasPorClase" class="foto_desc" />
-        <img src="Fotos/VictimasPorGravedad.png" alt="VictimasPorClase" class="foto_desc" />
-        <img src="Fotos/VictimasPorMes.png" alt="VictimasPorClase" class="foto_desc" />
+      <div id="teamDesc">
+        <ol>
+          <li>
+            <img class="fotoPersona" src="Fotos/david.jpg" alt="David Meza" />
+            <p>David Meza</p>
+            <p>Web Developer</p>
+          </li>
+          <li>
+            <img
+              class="fotoPersona"
+              src="Fotos/andres.jpeg"
+              alt="Andres Evertsz"
+            />
+            <p>Andres Evertsz</p>
+            <p>Data Analist</p>
+          </li>
+          <li>
+            <img
+              src="Fotos/foto.png"
+              alt="Cristian Berrio"
+              class="fotoPersona"
+            />
+            <p>Cristian Berrio</p>
+            <p>Creative investigator and Developer</p>
+          </li>
+          <li>
+            <img
+              src="Fotos/sebastian.jpg"
+              alt="Sebastian Guzman"
+              class="fotoPersona"
+            />
+            <p>Sebastian Guzman</p>
+            <p>Tester</p>
+          </li>
+        </ol>
       </div>
     </div>
-  </div>
-</body>
+
+    <div class="clearfix"></div>
+
+    <div id="content2">
+      <h1 class="content2parr" , id="origin_database">Our selected Dataset</h1>
+      <h3 class="content2parr">
+        Information on accident victims in Barranquilla (from DatosAbiertos)
+      </h3>
+
+      <div class="dataset">
+        <img
+          src="Fotos/Dataset.png"
+          alt="Celdas del dataset seleccionado"
+          class="fotoDF"
+        />
+      </div>
+
+      <div class="descripcion">
+        <h2 class="title_desc">
+          Explanation from our Database and brief visualization of the data
+        </h2>
+
+        <div class="parrafoDesc">
+          <p>
+            The dataset "Accidentalidad en Barranquilla - víctimas" (Accidents
+            in Barranquilla - victims) from datos.gov.co is crucial for
+            addressing public safety concerns, transportation planning, policy
+            formulation, research endeavors, community awareness, and resource
+            allocation. By providing comprehensive information about accident
+            victims in Barranquilla, Colombia, this dataset serves as a vital
+            tool for understanding the frequency, nature, and locations of
+            accidents, therefore enabling targeted interventions to reduce
+            accidents and associated harm.
+          </p>
+        </div>
+
+        <div class="parrafoDesc">
+          <p>
+            Analysis of the data facilitates insights into transportation
+            patterns, infrastructure deficiencies, and factors contributing to
+            accidents, informing the development and evaluation of effective
+            policies aimed at enhancing road safety. Moreover, making this data
+            publicly available raises community awareness about the importance
+            of road safety and encourages safer behaviors while traveling.
+          </p>
+        </div>
+
+        <div class="parrafoDesc">
+          <p>
+            It's important to mention that with this project We could also
+            identify and pinpoint high-risk areas, efficiently allocate
+            resources for their prevention, and plan prevention strategies
+            accordingly.
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            The statistical insights derived from the dataset analysis reveal
+            notable patterns regarding accident victimization in Barranquilla.
+            Fluctuations in the quantity of victims over time suggest potential
+            seasonal variations in accident rates, while the distribution of
+            victims across different severity levels and types of accidents
+            underscores the need for targeted interventions and safety measures.
+            Disparities in victim distribution by gender highlight demographic
+            considerations for safety initiatives, while identifying age groups
+            most affected by accidents offers valuable guidance for tailored
+            educational programs and preventive measures. Overall, these
+            insights provide crucial information for policymakers and community
+            stakeholders to formulate effective strategies aimed at improving
+            road safety and reducing the number of accident victims in
+            Barranquilla.
+          </p>
+        </div>
+
+        <div id="fotosDesc">
+          <img
+            src="Fotos/VictimasPorSexo.png"
+            alt="Numero de Victimas Por Sexo"
+            class="foto_desc"
+          />
+          <img
+            src="Fotos/VictimasPorClase.png"
+            alt="VictimasPorClase"
+            class="foto_desc"
+          />
+          <img
+            src="Fotos/VictimasPorGravedad.png"
+            alt="VictimasPorClase"
+            class="foto_desc"
+          />
+          <img
+            src="Fotos/VictimasPorMes.png"
+            alt="VictimasPorClase"
+            class="foto_desc"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div id="content3">
+      <div class="descripcion">
+        <h1 class="title_desc">Our initial model selection</h1>
+        <div class="parrafoDesc">
+          <p>
+            Looking at the nature of the data and analyzing the information
+            within it, we have come to the initial conclusion that with this
+            data, we might be able to predict whether a person survives a car
+            accident or just gets injured but stays alive.
+          </p>
+        </div>
+
+        <div class="parrafoDesc">
+          <p>
+            We have decided to use this condition as our model’s output, and for
+            the inputs we have decided to take into consideration several
+            aspects of the victim of the car accident, as well as some
+            conditions regarding the accident itself.
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>The inputs of our model will be the following</p>
+          <ul class="lista">
+            <li class="item_lista">
+              <strong>CONDICION_VICTIMA:</strong> which describes, as stated,
+              the victim’s role in the accident, for example, was our victim a
+              pedestrian? Maybe a motor biker, maybe the driver of one of the
+              vehicles involved in the accident. Etc.,
+            </li>
+            <li class="item_lista">
+              <strong>CLASE_ACCIDENTE:</strong> which describes, as stated in
+              the name, what happened exactly in the accident, a car crash?
+              Someone getting ran over? Etc.,
+            </li>
+            <li class="item_lista">
+              <strong>SEXO_VICTIMA:</strong> which describes the victim’s
+              gender, male or female.
+            </li>
+            <li class="item_lista">
+              <strong>EDAD_VICTIMA:</strong> which describes the age of the
+              victim.
+            </li>
+          </ul>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            Our desired output will be GRAVEDAD_ACCIDENTE, which can take two
+            different values HERIDO (injured, wounded), MUERTO (dead).
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            Our general objective is to determine, whether or not, these inputs
+            are sufficient enough to train a machine learning model and, most
+            importantly, predict with certain level of error, out desired
+            output.
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            We have chosen logistic regression as our first model selection
+            because we can see our output is a binary categorical variable and
+            we believe this model to be fit for our current machine learning
+            problem. As for the inputs, since we have both discrete and
+            continuous variables we have decided to encode our non-numeric
+            variables using the One-Hot_Encoding technique, which creates a
+            column for each unique value our categorical variable can take and
+            sets 1 to the corresponding column value and 0 for the others. We
+            have also used a label enconding for out output column to transform
+            the values HERIDO and MUERTO as 0 and 1 respectively
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            With this technique we have all our inputs as numerical variables
+            and we are good to proceed with training the model.
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            It is important to mention that we have also used a train test
+            split, using, initially, 30% of the data for testing.
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            <strong
+              >The following image is a representation of some one the
+              dataframe's columns with the One-Hot_Encoding technique
+            </strong>
+          </p>
+        </div>
+        <div class="dataset">
+          <img
+            src="Fotos/OneHotEncodedDataframe.png"
+            alt="Algunas celdas del dataset arreglado"
+          />
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            Before training this model we had to clean our dataframe, since
+            there was a small amount of rows (less than 100) with unexplicably
+            high and unrealistic age values like 2024 or values above 100 which
+            we believe to be not so probable to happen in our context, or with
+            no especified gender. Hence the reduction in the amount of rows from
+            our <a href="#origin_database">original database</a>
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            It is important to say that, initially there was a
+            "another/not-especified" value for the columns "CONDICION_VICTIMA"
+            and "CLASE_ACCIDENTE" and there were a few rows that made use of
+            this values, but since the amount was too small and the parameters
+            associated with these inputs showed to be not so significant when
+            visualizing the coefficients of the model, we decided it'd be best
+            to take them out of our final dataframe. This decision helped
+            improve our R^2 score a bit, which we will cover in the next section
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            The following image is the command used to delete these undesired
+            rows we had previously mentioned
+          </p>
+        </div>
+
+        <div class="dataset">
+          <img
+            src="Fotos/cleaningCommand.png"
+            alt="Comando para quitar filas no deseadas"
+          />
+        </div>
+
+        <div class="parrafoDesc">
+          <p>
+            As stated before, we used the R^2 score with the built in function
+            <strong>score()</strong> to check the preciseness of our model
+            against the test data from our train_test_split and we were left
+            with a good score overall
+          </p>
+        </div>
+        <div class="dataset">
+          <img src="Fotos/score.png" alt="puntaje R^2 del modelo" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

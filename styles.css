@@ -61,17 +61,17 @@ header{
     padding: 10px;
     margin: 45px 45px 0px 45px;
     text-align: center;
-    height: 1850px;
+    height: 2100px;
     box-shadow: 0px 0px 7px black;
 }
 
-#fotoDF{
+.fotoDF{
     height: 369.9px;
     width: 1098px;
     box-shadow: 0px 0px 7px black;
 }
 
-#dataset{
+.dataset{
     margin-bottom: 70px;
 }
 
@@ -79,17 +79,36 @@ header{
     margin: 15px 0px;
 }
 
-#title_desc{
+.title_desc{
     text-align: center;
     margin-bottom: 35px;
 }
 
-#descripcion{
+.descripcion{
     text-align: left;
 }
 
-.parrafoDesc{
+.parrafoDesc p{
     width: 100%;
     height: auto;
-    margin: 20px 10px;
+    margin: 20px 0px 15px 20px;
+    width: 95%;
+    
+}
+
+#content3{
+    background-color: rgb(222, 208, 182);
+    padding: 10px;
+    margin: 45px 45px 0px 45px;
+    text-align: center;
+    height: 2100px;
+    box-shadow: 0px 0px 7px black;
+}
+
+.lista{
+    padding-left: 50px;
+}
+
+.item_lista{
+    margin: 20px 0px;
 }
