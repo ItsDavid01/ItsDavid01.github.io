@@ -224,10 +224,33 @@
         </div>
         <div class="parrafoDesc">
           <p>
-            We have chosen logistic regression as our first model selection
-            because we can see our output is a binary categorical variable and
-            we believe this model to be fit for our current machine learning
-            problem. As for the inputs, since we have both discrete and
+            We have chosen RandomForestClassifier as out first model selection,
+            because at first we can see that we are trying to predict a binary
+            categorical variable which can take exactly two cases (death,
+            wounded), this is the task of a classifier.
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            Second but not least important is because the data itself is
+            umbalanced, roughly 2% of the accidents end up on death and the vast
+            majority of accidents come from crashing (choques). To fix this
+            umbalance, we use the Ensemble type model RandomForestClassifier,
+            which is specially optimal for umbalanced classes. As another layer
+            of protection we also specify a parameter called
+            <strong>class_weight="balanced"</strong>
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            This parameter inverts the class weights in order to give more
+            importance to the minority class, which is death cases and is what
+            interests us the most.
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            As for the inputs of our model, since we have both discrete and
             continuous variables we have decided to encode our non-numeric
             variables using the One-Hot_Encoding technique, which creates a
             column for each unique value our categorical variable can take and
@@ -265,7 +288,7 @@
         <div class="parrafoDesc">
           <p>
             Before training this model we had to clean our dataframe, since
-            there was a small amount of rows (less than 100) with unexplicably
+            there was a small amount of rows (less than 200) with unexplicably
             high and unrealistic age values like 2024 or values above 100 which
             we believe to be not so probable to happen in our context, or with
             no especified gender. Hence the reduction in the amount of rows from
@@ -280,8 +303,7 @@
             this values, but since the amount was too small and the parameters
             associated with these inputs showed to be not so significant when
             visualizing the coefficients of the model, we decided it'd be best
-            to take them out of our final dataframe. This decision helped
-            improve our R^2 score a bit, which we will cover in the next section
+            to take them out of our final dataframe
           </p>
         </div>
         <div class="parrafoDesc">
@@ -290,24 +312,65 @@
             rows we had previously mentioned
           </p>
         </div>
-
         <div class="dataset">
           <img
             src="Fotos/cleaningCommand.png"
             alt="Comando para quitar filas no deseadas"
           />
         </div>
-
         <div class="parrafoDesc">
           <p>
-            As stated before, we used the R^2 score with the built in function
-            <strong>score()</strong> to check the preciseness of our model
-            against the test data from our train_test_split and we were left
-            with a good score overall
+            We will check each of the four main matrics to compare the results
+            of our model. For that we have decided to run our models several
+            times, obtaining a distribution of metric values we will later plot
+            for easier analysis
+            <strong
+              >To obtain the following graphics we ran our model 25 times and
+              took one sample out to visualize its confusion matrix, for a
+              better understanding of the amount of false or true
+              positives/negatives</strong
+            >
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            Here is the confusion matrix of one of the 25 runs, showing us the
+            proportion of true or false negative/positives
           </p>
         </div>
         <div class="dataset">
-          <img src="Fotos/score.png" alt="puntaje R^2 del modelo" />
+          <img
+            src="Fotos/bad_cm_norNorm.png"
+            alt="Matriz de confusion del modelo 1"
+          />
+          <img
+            src="Fotos/bad_cm_Norm.png"
+            alt="matriz de confusion normalizada del modelo 1"
+          />
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            By looking at this one run, we can see that our model is pretty good
+            at predicting the mayority class, which is "wounded" and stands for
+            0 in our model, but is not doing good at predicting the minority
+            class
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            <strong
+              >In the following graphics we will see the distribution of scores
+              for all 25 runs
+            </strong>
+          </p>
+        </div>
+        <div class="dataset">
+          <img src="Fotos/bad_acc_scores.png" alt="accuracy del modelo 1" />
+          <img src="Fotos/bac_rec_scores.png" alt="recall del modelo 1" />
+        </div>
+        <div class="dataset">
+          <img src="Fotos/bad_f1_scores.png" alt="f1 del modelo 1" />
+          <img src="Fotos/bad_pre_scores.png" alt="precision del modelo 1" />
         </div>
       </div>
     </div>
