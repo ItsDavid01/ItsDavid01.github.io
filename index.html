@@ -445,7 +445,7 @@
           </p>
         </div>
         <div class="dataset">
-          <img id=smote src="/Fotos/Smote.png" alt="Smote" />
+          <img id="smote" src="/Fotos/Smote.png" alt="Smote" />
         </div>
         <div class="parrafoDesc">
           <p>
@@ -455,17 +455,19 @@
             SMOTE, we should be able to have decent predicitions using this
             model
           </p>
+        </div>
         <div class="parrafoDesc">
           <p>
             We will check each of the four main matrics to compare the results
             of our model. For that we have decided to run our models several
-            times just like the initial model, obtaining a distribution of metric values we will later plot
-            for easier analysis
+            times just like the initial model, obtaining a distribution of
+            metric values we will later plot for easier analysis
             <strong
               >To obtain the following graphics we ran our model 100 times and
               took one sample out to visualize its confusion matrix, for a
               better understanding of the amount of false or true
-              positives/negatives</strong>
+              positives/negatives</strong
+            >
           </p>
         </div>
         <div class="parrafoDesc">
@@ -477,13 +479,15 @@
         <div class="dataset">
           <img
             src="Fotos/bgood_cm_Norm.png"
-            alt="Matriz de confusion del modelo 2">
+            alt="Matriz de confusion del modelo 2"
+          />
         </div>
         <div class="parrafoDesc">
           <p>
-            By looking at this one run, we can see, we have sacrified some predictions of our 
-            mayority class, but we have gained a much better prediction of our minority class, 
-            which was our initial challenge with this dataset
+            By looking at this one run, we can see, we have sacrified some
+            predictions of our mayority class, but we have gained a much better
+            prediction of our minority class, which was our initial challenge
+            with this dataset
           </p>
         </div>
         <div class="parrafoDesc">
@@ -504,22 +508,28 @@
         </div>
         <div class="parrafoDesc">
           <p>
-            It is important to notice that the only metric we care about in this model is the <strong>recall</strong>
-            which is the proportion of true positives amongst all entries we are sure are positive.
-            On the contrary, the precision is also the proportion of true positives but amongst all entries the
-            <strong>model</strong> says are positives. Since our classes are still umbalanced in our
-            validation data (as it should be, since we must test on <strong>real data</strong>)
-            the mayority of those positives predicted by the model, will be false positives, which will greatly
-            surpass the amount of true positives. This is the reason why out precision is so low compared to our recall
+            It is important to notice that the only metric we care about in this
+            model is the <strong>recall</strong>
+            which is the proportion of true positives amongst all entries we are
+            sure are positive. On the contrary, the precision is also the
+            proportion of true positives but amongst all entries the
+            <strong>model</strong> says are positives. Since our classes are
+            still umbalanced in our validation data (as it should be, since we
+            must test on <strong>real data</strong>) the mayority of those
+            positives predicted by the model, will be false positives, which
+            will greatly surpass the amount of true positives. This is the
+            reason why out precision is so low compared to our recall
           </p>
         </div>
         <div class="parrafoDesc">
           <p>
-            We already know the accuracy is a weak metric against classification methods,
-            since the accuracy is classless, this means that the metric doesn't see classes,
-            it just sees the proportion of correctly guessed prediction over the total data.
-            And the f1 score is a combination of recall and precision, and since we have good recall but bad precision,
-            the f1 score will be dragged down by our low precision rating
+            We already know the accuracy is a weak metric against classification
+            methods, since the accuracy is classless, this means that the metric
+            doesn't see classes, it just sees the proportion of correctly
+            guessed prediction over the total data. And the f1 score is a
+            combination of recall and precision, and since we have good recall
+            but bad precision, the f1 score will be dragged down by our low
+            precision rating
           </p>
         </div>
       </div>
