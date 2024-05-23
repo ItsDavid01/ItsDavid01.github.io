@@ -75,6 +75,11 @@ header{
     margin-bottom: 70px;
 }
 
+#smote{
+    width: 80%;
+    height: 80%;
+}
+
 .content2parr{
     margin: 15px 0px;
 }
@@ -97,6 +102,15 @@ header{
 }
 
 #content3{
+    background-color: rgb(222, 208, 182);
+    padding: 10px;
+    margin: 45px 45px 0px 45px;
+    text-align: center;
+    height: auto;
+    box-shadow: 0px 0px 7px black;
+}
+
+#content4{
     background-color: rgb(222, 208, 182);
     padding: 10px;
     margin: 45px 45px 0px 45px;

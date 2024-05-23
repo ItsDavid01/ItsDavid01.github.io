@@ -175,10 +175,9 @@
             accident or just gets injured but stays alive.
           </p>
         </div>
-
         <div class="parrafoDesc">
           <p>
-            We have decided to use this condition as our model’s output, and for
+            We have decided to use this condition as our model's output, and for
             the inputs we have decided to take into consideration several
             aspects of the victim of the car accident, as well as some
             conditions regarding the accident itself.
@@ -371,6 +370,157 @@
         <div class="dataset">
           <img src="Fotos/bad_f1_scores.png" alt="f1 del modelo 1" />
           <img src="Fotos/bad_pre_scores.png" alt="precision del modelo 1" />
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div id="content4">
+      <div class="descripcion">
+        <h1 class="title_desc">
+          An improvement to our initial model selection
+        </h1>
+        <div class="parrafoDesc">
+          <p>
+            We have decided to use a different strategy to correct our data
+            imbalance and went for over or under-sampling techniques
+          </p>
+        </div>
+
+        <div class="parrafoDesc">
+          <p>
+            These techniques help balance the data through artificially creating
+            more samples of the minority class until it equals the mayority one
+            (oversampling) or by carefully deducting samples from our mayority
+            class to match the amount of samples of our rhe minority one
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            There are, of course, advantages and disadvantages to the use of
+            synthetic generation or deduction of data
+          </p>
+          <ul class="lista">
+            <li class="item_lista">
+              <strong>Oversampling:</strong> may lead to overfitting, especially
+              if the minority class is oversampled excessively
+            </li>
+            <li class="item_lista">
+              By adding more instances to the dataset,
+              <strong>oversampling</strong> increases the size of the dataset,
+              which can lead to longer training times and higher computational
+              costs.
+            </li>
+            <li class="item_lista">
+              <strong>Oversampling:</strong> helps balance the dataset, which
+              can prevent the model from being biased towards the majority
+              class.
+            </li>
+            <li class="item_lista">
+              By increasing the number of instances in the minority class
+              <strong>EDAD_VICTIMA:</strong> helps the model learn the
+              characteristics of the minority class better
+            </li>
+            <li>
+              <strong>Undersampling</strong> may come with an excessive loss of
+              information from our mayority class
+            </li>
+          </ul>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            We have chosen to oversample out minority class because we are more
+            concerned about the information loss that comes from undersampling,
+            and since the minority class represents roughly 2% of the total
+            data, our training data would be too small to be useful in
+            generalization
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            From all the oversampling techniques, we have chonse to use SMOTE,
+            since we believe its best to use a sophisticated algorithm than
+            using a random Oversampler
+          </p>
+        </div>
+        <div class="dataset">
+          <img id=smote src="/Fotos/Smote.png" alt="Smote" />
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            As for our model, we have decided to use a Regression Model, but for
+            our classification problem we are exclusively using a Logistic
+            Regression Model. Since our classes are now balanced thanks to
+            SMOTE, we should be able to have decent predicitions using this
+            model
+          </p>
+        <div class="parrafoDesc">
+          <p>
+            We will check each of the four main matrics to compare the results
+            of our model. For that we have decided to run our models several
+            times just like the initial model, obtaining a distribution of metric values we will later plot
+            for easier analysis
+            <strong
+              >To obtain the following graphics we ran our model 100 times and
+              took one sample out to visualize its confusion matrix, for a
+              better understanding of the amount of false or true
+              positives/negatives</strong>
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            Here is the confusion matrix of one of the 100 runs, showing us the
+            proportion of true or false negative/positives
+          </p>
+        </div>
+        <div class="dataset">
+          <img
+            src="Fotos/bgood_cm_Norm.png"
+            alt="Matriz de confusion del modelo 2">
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            By looking at this one run, we can see, we have sacrified some predictions of our 
+            mayority class, but we have gained a much better prediction of our minority class, 
+            which was our initial challenge with this dataset
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            <strong
+              >In the following graphics we will see the distribution of scores
+              for all 100 runs
+            </strong>
+          </p>
+        </div>
+        <div class="dataset">
+          <img src="Fotos/good_acc_scores.png" alt="accuracy del modelo 2" />
+          <img src="Fotos/good_rec_scores.png" alt="recall del modelo 2" />
+        </div>
+        <div class="dataset">
+          <img src="Fotos/good_f1_scores.png" alt="f1 del modelo 2" />
+          <img src="Fotos/good_pre_scores.png" alt="precision del modelo 2" />
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            It is important to notice that the only metric we care about in this model is the <strong>recall</strong>
+            which is the proportion of true positives amongst all entries we are sure are positive.
+            On the contrary, the precision is also the proportion of true positives but amongst all entries the
+            <strong>model</strong> says are positives. Since our classes are still umbalanced in our
+            validation data (as it should be, since we must test on <strong>real data</strong>)
+            the mayority of those positives predicted by the model, will be false positives, which will greatly
+            surpass the amount of true positives. This is the reason why out precision is so low compared to our recall
+          </p>
+        </div>
+        <div class="parrafoDesc">
+          <p>
+            We already know the accuracy is a weak metric against classification methods,
+            since the accuracy is classless, this means that the metric doesn't see classes,
+            it just sees the proportion of correctly guessed prediction over the total data.
+            And the f1 score is a combination of recall and precision, and since we have good recall but bad precision,
+            the f1 score will be dragged down by our low precision rating
+          </p>
         </div>
       </div>
     </div>
